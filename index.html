@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,13 @@
   </head>
   <body data-page="home">
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Home">JERB</a>
+      <a class="brand" href="index.html" aria-label="Home">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 10.8 12 3l9 7.8" />
+          <path d="M5.5 9.2V21h13V9.2" />
+          <path d="M9.5 21v-6h5v6" />
+        </svg>
+      </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="academics.html">Academics</a>
         <a href="projects.html">Projects</a>
@@ -22,122 +28,50 @@
     </header>
 
     <main>
-      <section class="hero-lab">
-        <div class="hero-copy">
-          <p class="eyebrow">Personal lab</p>
-          <h1>Juan Esteban Reyes Beltrán</h1>
-          <p class="hero-lede">
-            I am building a home for research, software experiments, game ideas,
-            and tools that make human systems easier to understand.
-          </p>
-          <div class="hero-actions" aria-label="Featured sections">
-            <a class="button primary" href="projects.html">Explore projects</a>
-            <a class="button secondary" href="academics.html">Read academic work</a>
+      <section class="about-hero" aria-labelledby="about-title">
+        <img
+          class="about-portrait"
+          src="assets/personal-webpage-image.png"
+          alt="Portrait of Juan Esteban Reyes Beltrán"
+        />
+        <div class="about-intro">
+          <h1 id="about-title">Juan Esteban Reyes Beltrán</h1>
+          <div class="about-text">
+            <p>
+              I’m a computer scientist and mathematician interested in
+              cryptography, information theory, computer security, and software
+              development. I’m drawn to work where technical depth meets real
+              responsibility: systems that people depend on, decisions that
+              shape risk, and tools that can make safer choices easier.
+            </p>
+            <p>
+              My work is guided by the belief that technology should be
+              evaluated not only by how it feels to users, but by how it affects
+              them. To me, security is one of the clearest expressions of that
+              responsibility. It means building systems that protect people at
+              scale, reduce risk before it becomes harm, and help engineers
+              design with safety in mind from the start.
+            </p>
+            <p>
+              My background spans security-focused software engineering,
+              academic research in cryptography, and extensive teaching
+              experience. Together, these have trained me to think carefully
+              about risk, communicate complex ideas clearly, and build systems
+              with people in mind.
+            </p>
           </div>
         </div>
-
-        <div class="lab-panel" aria-label="Current focus areas">
-          <div class="panel-topline">
-            <span>Focus map</span>
-            <span class="status-dot">active</span>
-          </div>
-          <div class="signal-grid">
-            <article>
-              <span>01</span>
-              <strong>Social games</strong>
-              <p>Online versions of hidden-role and card-based table games.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <strong>Academic work</strong>
-              <p>Research, papers, final projects, and structured writing.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <strong>Wellness tools</strong>
-              <p>Personal software for reflection, routines, and progress.</p>
-            </article>
-            <article>
-              <span>04</span>
-              <strong>Systems thinking</strong>
-              <p>Projects that connect strategy, behavior, and design.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="pathways" aria-labelledby="pathways-title">
-        <div class="section-heading">
-          <p class="eyebrow">Entry points</p>
-          <h2 id="pathways-title">Choose the right lens</h2>
-        </div>
-        <div class="pathway-grid">
-          <a class="pathway-card academic" href="academics.html">
-            <span>Academics & research</span>
-            <p>Formal projects, papers, research interests, and written work.</p>
-          </a>
-          <a class="pathway-card portfolio" href="projects.html">
-            <span>Tech portfolio</span>
-            <p>Games, apps, prototypes, and case studies as they develop.</p>
-          </a>
-          <a class="pathway-card cv" href="cv.html">
-            <span>Curriculum vitae</span>
-            <p>A placeholder for now, ready for your uploaded CV later.</p>
-          </a>
-        </div>
-      </section>
-
-      <section class="about-section" aria-labelledby="about-title">
-        <div class="about-copy">
-          <p class="eyebrow">About me</p>
-          <h2 id="about-title">The person behind the projects</h2>
-          <p>
-            This section will become a more personal introduction: where I grew
-            up, what shaped the way I think, and the interests that sit outside
-            my academic and technical work.
-          </p>
-          <p>
-            For now, it is intentionally written as a placeholder so the page has
-            the right shape before the details are filled in with your actual
-            story.
-          </p>
-        </div>
-        <div class="about-notes" aria-label="Personal notes placeholders">
-          <article>
-            <span>Origin</span>
-            <p>Where I grew up, the places that feel formative, and what I carry from them.</p>
-          </article>
-          <article>
-            <span>Outside the screen</span>
-            <p>Interests, hobbies, books, sports, music, food, travel, or rituals that matter.</p>
-          </article>
-          <article>
-            <span>How I think</span>
-            <p>The questions, values, and curiosities that connect the personal and professional.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="now-section" aria-labelledby="now-title">
-        <div>
-          <p class="eyebrow">Currently exploring</p>
-          <h2 id="now-title">Ideas in motion</h2>
-        </div>
-        <ul class="idea-list">
-          <li>Designing online social deduction games that feel good remotely.</li>
-          <li>Collecting academic work into a clear, professional archive.</li>
-          <li>Sketching personal wellness tools that support daily momentum.</li>
-        </ul>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>Designed as a personal lab for Juan Esteban Reyes Beltrán.</p>
       <div>
-        <a href="https://github.com/" aria-label="GitHub profile placeholder">GitHub</a>
-        <a href="https://www.linkedin.com/" aria-label="LinkedIn profile placeholder">LinkedIn</a>
-        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://github.com/juanereyes">GitHub</a>
+        <a href="https://www.linkedin.com/in/juan-esteban-reyes-beltran-8081b71b8">LinkedIn</a>
+        <a href="mailto:jereyes@mit.edu">Email</a>
       </div>
     </footer>
   </body>
 </html>
+
