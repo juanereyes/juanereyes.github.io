@@ -24,37 +24,256 @@
     </header>
 
     <main class="subpage academic-page">
-      <section class="subpage-hero">
-        <p class="eyebrow">Academic archive</p>
-        <h1>Research, papers, and formal projects</h1>
-        <p>
-          A professional home for final projects, research interests, papers,
-          presentations, and future publications.
-        </p>
+      <section class="subpage-hero academic-hero">
+        <div class="academic-stats" aria-label="Academic summary">
+          <article>
+            <strong>13</strong>
+            <span>Academic terms represented</span>
+          </article>
+          <article>
+            <strong>48</strong>
+            <span>Subjects and research entries</span>
+          </article>
+          <article>
+            <strong>6</strong>
+            <span>Main technical areas</span>
+          </article>
+        </div>
       </section>
 
-      <section class="content-list" aria-label="Academic work placeholders">
-        <article class="content-row">
-          <span class="row-meta">Research</span>
+      <section class="papers-section" aria-labelledby="papers-heading">
+        <div class="section-heading papers-heading">
           <div>
-            <h2>Research interests</h2>
-            <p>Placeholder for research areas, collaborators, and open questions.</p>
+            <p class="eyebrow">Selected papers</p>
+            <h2 id="papers-heading">Research and technical writing</h2>
           </div>
-        </article>
-        <article class="content-row">
-          <span class="row-meta">Coursework</span>
+          <p>
+            A selection of papers spanning cryptography, secure systems,
+            discrete mathematics, and thesis research.
+          </p>
+        </div>
+
+        <div class="paper-grid">
+          <article class="paper-card">
+            <span class="paper-meta">MEng thesis proposal</span>
+            <h3>Thesis Proposal and Survey Paper</h3>
+            <p>
+              A thesis-stage survey of cryptanalysis for the Learning Parity
+              with Noise assumption and its variants, focusing on reductions,
+              parameter sensitivity, classical attacks, and quantum
+              cryptanalysis.
+            </p>
+            <a href="assets/papers/meng-thesis-proposal-survey-paper.pdf">Open paper</a>
+          </article>
+
+          <article class="paper-card">
+            <span class="paper-meta">Post-quantum cryptography</span>
+            <h3>Testbed Environment for PQC Algorithms on IoT Devices</h3>
+            <p>
+              Presents a C-based test environment for evaluating post-quantum
+              cryptography on ESP32-class IoT devices using mbedTLS, pqm4, and
+              liboqs.
+            </p>
+            <a href="assets/papers/pqc-algorithms-iot-testbed.pdf">Open paper</a>
+          </article>
+
+          <article class="paper-card">
+            <span class="paper-meta">Applied cryptography</span>
+            <h3>Encrypt What Matters: ROI-Guided FHE for CNN Inference</h3>
+            <p>
+              Proposes a region-of-interest approach to reduce fully
+              homomorphic encryption overhead for privacy-preserving CNN
+              inference.
+            </p>
+            <a href="assets/papers/6-5610-roi-guided-fhe-cnn-inference.pdf">Open paper</a>
+          </article>
+
+          <article class="paper-card">
+            <span class="paper-meta">Number theory and cryptography</span>
+            <h3>Fully Homomorphic Cryptographic Primitives Within the p-Adic Model</h3>
+            <p>
+              Explores homomorphic and fully homomorphic encryption schemes over
+              p-adic numbers, including arithmetic operations, constraints, and
+              implementation directions.
+            </p>
+            <a href="assets/papers/18-784-p-adics-in-cryptography.pdf">Open paper</a>
+          </article>
+
+          <article class="paper-card">
+            <span class="paper-meta">Discrete mathematics</span>
+            <h3>Szemeredi's Regularity Lemma: Are the Irregular Pairs Necessary?</h3>
+            <p>
+              Studies when irregular pairs are necessary in regularity
+              partitions, using half-graphs and structural graph conditions to
+              sharpen the discussion.
+            </p>
+            <a href="assets/papers/18-204-szemeredi-regularity-lemma.pdf">Open paper</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="coursework-section" aria-labelledby="coursework-heading">
+        <div class="section-heading coursework-heading">
           <div>
-            <h2>Final projects</h2>
-            <p>Placeholder for selected university projects and technical reports.</p>
+            <p class="eyebrow">Coursework timeline</p>
+            <h2 id="coursework-heading">Classwork and research</h2>
           </div>
-        </article>
-        <article class="content-row">
-          <span class="row-meta">Writing</span>
-          <div>
-            <h2>Papers and presentations</h2>
-            <p>Placeholder for papers, posters, slides, and publication links.</p>
+          <p>
+            Descriptions are paraphrased from official MIT catalog and subject
+            information, then reframed to emphasize skills and professional
+            relevance.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="term">
+            <div class="term-label"><h3>Thesis</h3><span>Fall 2025, Spring 2026, Summer 2026</span></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.THM</span><div><h4>Master of Engineering Program Thesis</h4><p>Advanced an MEng research project under faculty supervision, integrating independent technical work, problem framing, advisor feedback, structured analysis, research execution, and polished thesis-level communication.</p><div class="course-tags"><span>Thesis</span><span>Research synthesis</span><span>Technical writing</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Spring 2026</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.5410</span><div><h4>Advanced Complexity Theory</h4><p>Studied research-level computational complexity, including nondeterministic, alternating, probabilistic, and parallel computation, Boolean circuits, complexity classes, polynomial hierarchy, interactive proofs, randomness, pseudorandomness, and derandomization.</p><div class="course-tags"><span>Complexity theory</span><span>Randomness</span><span>Research topics</span></div></div></article>
+              <article class="course"><span class="course-code">6.5660</span><div><h4>Computer Systems Security</h4><p>Studied secure computer system design and implementation through attacks, defenses, research papers, operating system security, privilege separation, capabilities, language-based security, cryptographic protocols, trusted hardware, web security, mobile security, labs, and a final project.</p><div class="course-tags"><span>Systems security</span><span>Attack analysis</span><span>Secure design</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Fall 2025</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.5620</span><div><h4>Foundations of Cryptography</h4><p>Studied rigorous modern cryptography, including public-key encryption, digital signatures, pseudorandom generation, zero-knowledge proofs, homomorphic encryption, and secure multiparty computation.</p><div class="course-tags"><span>Cryptographic theory</span><span>Proofs</span><span>Secure primitives</span></div></div></article>
+              <article class="course"><span class="course-code">18.404</span><div><h4>Theory of Computation</h4><p>Studied computability and complexity through automata, regular and context-free languages, decidability, reducibility, recursive function theory, time and space complexity, completeness, hierarchy theorems, oracles, probabilistic computation, and interactive proofs.</p><div class="course-tags"><span>Computability</span><span>Complexity</span><span>Formal languages</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Spring 2025</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.5610</span><div><h4>Applied Cryptography</h4><p>Studied advanced cryptographic applications, implementation, and cryptanalysis, including proof systems, zero knowledge, secret sharing, multiparty computation, homomorphic encryption, voting, block ciphers, hash functions, elliptic-curve and lattice-based systems.</p><div class="course-tags"><span>Applied cryptography</span><span>Zero knowledge</span><span>Secure computation</span></div></div></article>
+              <article class="course"><span class="course-code">6.6420</span><div><h4>Quantum Information Science</h4><p>Extended quantum computation into quantum information theory, emphasizing mathematical models of quantum states, information processing, entanglement, communication, and the structure of quantum systems.</p><div class="course-tags"><span>Quantum information</span><span>Entanglement</span><span>Theory</span></div></div></article>
+              <article class="course"><span class="course-code">18.204</span><div><h4>Undergraduate Seminar in Discrete Mathematics</h4><p>Read and presented recent mathematical literature in combinatorics, graph theory, and discrete mathematics, strengthening proof communication, technical presentation, and mathematical writing.</p><div class="course-tags"><span>Discrete math</span><span>Combinatorics</span><span>Presentation</span></div></div></article>
+              <article class="course"><span class="course-code">21G.S84</span><div><h4>Special Subject: Portuguese IV</h4><p>Improved advanced Portuguese fluency, accuracy, and style in oral and written communication through discussion of news, literature, film, music, web-based materials, and grammar review.</p><div class="course-tags"><span>Portuguese</span><span>Advanced communication</span><span>Cross-cultural literacy</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Fall 2024</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.1600</span><div><h4>Foundations of Computer Security</h4><p>Studied cryptographic and systems foundations for secure computing, including pseudorandomness, hash functions, authentication, signatures, public-key encryption, isolation, access control, privilege separation, fuzzing, side channels, and runtime defenses.</p><div class="course-tags"><span>Security</span><span>Cryptography</span><span>Systems</span></div></div></article>
+              <article class="course"><span class="course-code">6.5210</span><div><h4>Advanced Algorithms</h4><p>Engaged graduate-level algorithmic design and analysis across advanced data structures, network flows, linear programming, computational geometry, approximation, online, parallel, external-memory, and streaming algorithms.</p><div class="course-tags"><span>Graduate algorithms</span><span>Optimization</span><span>Computational models</span></div></div></article>
+              <article class="course"><span class="course-code">18.785</span><div><h4>Number Theory I</h4><p>Studied algebraic number theory through Dedekind domains, ideals, prime splitting, lattice methods, class groups, local fields, ramification, zeta and L-functions, adeles, ideles, and class field theory statements.</p><div class="course-tags"><span>Algebraic number theory</span><span>Local fields</span><span>L-functions</span></div></div></article>
+              <article class="course"><span class="course-code">21G.S83</span><div><h4>Special Subject: Portuguese III</h4><p>Advanced Portuguese proficiency through deeper speaking, reading, writing, and listening practice, with cultural study through stories, film, music, and current issues in the Portuguese-speaking world.</p><div class="course-tags"><span>Portuguese</span><span>Intermediate fluency</span><span>Culture</span></div></div></article>
+              <article class="course"><span class="course-code">CMS.611</span><div><h4>Creating Video Games</h4><p>Developed games in small multidisciplinary teams, practicing creative design, production planning, design iteration, playtesting, visual and audio collaboration, fiction, programming, and critical discussion of games.</p><div class="course-tags"><span>Game design</span><span>Team production</span><span>Iteration</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Summer 2024</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.URN</span><div><h4>Undergraduate Research: Quantum Algorithms</h4><p>Worked on quantum algorithms research in EECS, developing skills in technical literature review, mathematical modeling, independent research execution, advisor collaboration, and precise communication of theoretical computer science ideas.</p><div class="course-tags"><span>Quantum algorithms</span><span>EECS research</span><span>Theory</span></div></div></article>
+              <article class="course"><span class="course-code">21G.URN</span><div><h4>Undergraduate Research: Global Languages Full Stack Development</h4><p>Developed the foundation for a Portuguese learning web application for MIT Global Studies and Languages, working across HTML, JavaScript, JSON, CSS, Python, Docker, SQLite, authentication, cookie management, and privilege separation.</p><div class="course-tags"><span>Full stack development</span><span>Portuguese learning</span><span>Authentication</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Spring 2024</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.1800</span><div><h4>Computer Systems Engineering</h4><p>Learned systems engineering techniques for managing complexity, modular client-server design, operating systems, performance, networks, naming, security, privacy, fault tolerance, coordination, recovery, and semester-long design work.</p><div class="course-tags"><span>Systems</span><span>Networks</span><span>Fault tolerance</span></div></div></article>
+              <article class="course"><span class="course-code">18.600</span><div><h4>Probability and Random Variables</h4><p>Built a probability foundation through sample spaces, random variables, distributions, conditional probability, Bayes' theorem, joint distributions, inequalities, the law of large numbers, and the central limit theorem.</p><div class="course-tags"><span>Probability</span><span>Random variables</span><span>Statistical reasoning</span></div></div></article>
+              <article class="course"><span class="course-code">18.784</span><div><h4>Seminar in Number Theory</h4><p>Strengthened advanced mathematical communication by reading, presenting, discussing, and writing about topics in number theory.</p><div class="course-tags"><span>Number theory</span><span>Presentation</span><span>Mathematical writing</span></div></div></article>
+              <article class="course"><span class="course-code">21G.S82</span><div><h4>Special Subject: Portuguese II</h4><p>Expanded Portuguese communication skills with continued grammar, vocabulary, listening, speaking, reading, writing, and cultural engagement through authentic materials.</p><div class="course-tags"><span>Portuguese</span><span>Culture</span><span>Fluency</span></div></div></article>
+              <article class="course"><span class="course-code">CMS.358</span><div><h4>The Short Form</h4><p>Analyzed brief literary and media forms across the Hispanic world, connecting aesthetics, temporality, media technologies, and cultural context across short stories, chronicles, poems, songs, and digital platforms.</p><div class="course-tags"><span>Media studies</span><span>Literary analysis</span><span>Spanish</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Fall 2023</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.1910</span><div><h4>Computation Structures</h4><p>Studied digital systems and computer architecture, including hardware description languages, combinational and sequential circuits, instruction set abstraction, pipelining, memory hierarchies, virtual memory, I/O, and parallel systems.</p><div class="course-tags"><span>Architecture</span><span>Digital systems</span><span>Hardware design</span></div></div></article>
+              <article class="course"><span class="course-code">6.6410</span><div><h4>Quantum Computation</h4><p>Explored quantum computing foundations through linear algebraic models of computation, quantum algorithms, qubits, gates, measurement, and the theoretical limits and opportunities of quantum information processing.</p><div class="course-tags"><span>Quantum computing</span><span>Algorithms</span><span>Linear algebra</span></div></div></article>
+              <article class="course"><span class="course-code">6.9030</span><div><h4>Strobe Project Laboratory</h4><p>Applied electronic flash, photography, stroboscopy, motion analysis, and high-speed videography through lab reports and independent group projects in measurement or imaging.</p><div class="course-tags"><span>Lab work</span><span>High-speed imaging</span><span>Technical reporting</span></div></div></article>
+              <article class="course"><span class="course-code">18.783</span><div><h4>Elliptic Curves</h4><p>Studied elliptic curves with computational applications to number theory and cryptography, including point-counting, isogenies, pairings, complex multiplication, factorization, primality proving, and elliptic-curve cryptography.</p><div class="course-tags"><span>Number theory</span><span>Cryptography</span><span>Computation</span></div></div></article>
+              <article class="course"><span class="course-code">CMS.586</span><div><h4>Introduction to Education</h4><p>Examined teaching and learning in K-12 contexts through education reform, media, history, simulations, games, digital access, school visits, collaborative projects, and reflective writing.</p><div class="course-tags"><span>Education</span><span>Fieldwork</span><span>Critical analysis</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Spring 2023</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.1020</span><div><h4>Software Construction</h4><p>Learned to build software that is reliable, understandable, and adaptable using specifications, invariants, testing, abstract data types, design patterns, concurrency, and functional programming.</p><div class="course-tags"><span>Testing</span><span>Concurrency</span><span>Design patterns</span></div></div></article>
+              <article class="course"><span class="course-code">6.1900</span><div><h4>Introduction to Programming in C and Assembly</h4><p>Developed low-level programming skills in C and assembly, focusing on memory, pointers, stacks, heaps, data representation, and the translation from high-level code to machine instructions.</p><div class="course-tags"><span>C</span><span>Assembly</span><span>Memory</span></div></div></article>
+              <article class="course"><span class="course-code">6.3900</span><div><h4>Introduction to Machine Learning</h4><p>Studied machine learning from an optimization perspective, covering supervised, unsupervised, and reinforcement learning, gradient-based methods, nonlinear models, and neural network architectures.</p><div class="course-tags"><span>Machine learning</span><span>Optimization</span><span>Neural networks</span></div></div></article>
+              <article class="course"><span class="course-code">18.702</span><div><h4>Algebra II</h4><p>Extended abstract algebra through group representations, rings, ideals, fields, modules, factorization, quadratic number fields, field extensions, and Galois theory.</p><div class="course-tags"><span>Galois theory</span><span>Rings and fields</span><span>Representations</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>January 2023</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">21G.801</span><div><h4>Portuguese I</h4><p>Built introductory Portuguese proficiency through speaking, listening, reading, writing, vocabulary development, grammar, and cultural study of the Portuguese-speaking world.</p><div class="course-tags"><span>Portuguese</span><span>Communication</span><span>Culture</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Fall 2022</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.1010</span><div><h4>Fundamentals of Programming</h4><p>Applied programming language concepts, recursion, data types, software engineering, and algorithmic techniques through design-and-implementation lab work in Python.</p><div class="course-tags"><span>Software design</span><span>Python</span><span>Implementation</span></div></div></article>
+              <article class="course"><span class="course-code">6.1220</span><div><h4>Design and Analysis of Algorithms</h4><p>Studied practical algorithm design and analysis, including sorting, search structures, hashing, divide-and-conquer, dynamic programming, greedy methods, amortized analysis, graph algorithms, and shortest paths.</p><div class="course-tags"><span>Graph algorithms</span><span>Dynamic programming</span><span>Analysis</span></div></div></article>
+              <article class="course"><span class="course-code">18.03</span><div><h4>Differential Equations</h4><p>Modeled dynamic systems with analytical, graphical, and numerical methods for ordinary differential equations, Fourier series, matrices, eigenvalues, PDEs, and phase plane analysis.</p><div class="course-tags"><span>Dynamical systems</span><span>Fourier series</span><span>Numerical methods</span></div></div></article>
+              <article class="course"><span class="course-code">18.701</span><div><h4>Algebra I</h4><p>Developed theoretical algebraic reasoning through group theory, geometry, linear algebra, and proof-based abstraction.</p><div class="course-tags"><span>Group theory</span><span>Linear algebra</span><span>Proofs</span></div></div></article>
+              <article class="course"><span class="course-code">CMS.609</span><div><h4>The Word Made Digital</h4><p>Explored computational and experimental writing methods, combining critical analysis with creative work across digital literature, procedural text, constraints, and media platforms.</p><div class="course-tags"><span>Digital writing</span><span>Creative coding</span><span>Media analysis</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Spring 2022</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">6.006</span><div><h4>Introduction to Algorithms</h4><p>Learned algorithmic modeling, core data structures, computational problem solving, performance analysis, and the relationship between programs and efficient algorithms.</p><div class="course-tags"><span>Data structures</span><span>Complexity</span><span>Algorithm design</span></div></div></article>
+              <article class="course"><span class="course-code">7.014</span><div><h4>Introductory Biology</h4><p>Studied molecular biology, genetics, cell biology, evolution, and biological systems through an environmental life science lens, including ecology, global metabolism, and climate impacts.</p><div class="course-tags"><span>Biology</span><span>Genetics</span><span>Ecology</span></div></div></article>
+              <article class="course"><span class="course-code">8.02</span><div><h4>Physics II</h4><p>Built a foundation in electromagnetism, including fields, potentials, circuits, magnetic induction, electromagnetic waves, and Maxwell's equations through active problem solving.</p><div class="course-tags"><span>Electromagnetism</span><span>Circuits</span><span>Physical intuition</span></div></div></article>
+              <article class="course"><span class="course-code">18.100B</span><div><h4>Real Analysis</h4><p>Developed rigorous proof skills through sequences, series, continuity, differentiability, integration, uniform convergence, topology, and analysis in higher-dimensional spaces.</p><div class="course-tags"><span>Proofs</span><span>Analysis</span><span>Topology</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>January 2022</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">18.02A</span><div><h4>Calculus</h4><p>Completed the second half of multivariable calculus, extending integration, vector fields, Green's theorem, Stokes' theorem, divergence theorem, and applications in science and engineering.</p><div class="course-tags"><span>Vector calculus</span><span>Integration</span><span>Scientific applications</span></div></div></article>
+            </div>
+          </article>
+
+          <article class="term">
+            <div class="term-label"><h3>Fall 2021</h3></div>
+            <div class="courses">
+              <article class="course"><span class="course-code">3.091</span><div><h4>Introduction to Solid-State Chemistry</h4><p>Built a chemistry foundation for engineering systems, connecting electronic structure, bonding, crystalline and amorphous materials, phase behavior, electrochemistry, kinetics, and energy technologies.</p><div class="course-tags"><span>Chemistry</span><span>Materials</span><span>Engineering systems</span></div></div></article>
+              <article class="course"><span class="course-code">6.0001</span><div><h4>Introduction to Computer Science Programming in Python</h4><p>Developed computational problem-solving in Python through algorithms, data structures, object-oriented programming, testing, debugging, and algorithmic complexity.</p><div class="course-tags"><span>Python</span><span>Algorithms</span><span>Debugging</span></div></div></article>
+              <article class="course"><span class="course-code">8.01</span><div><h4>Physics I</h4><p>Studied classical mechanics through kinematics, forces, conservation laws, rigid body motion, oscillations, angular momentum, and fluid mechanics, with collaborative problem solving and experimental reasoning.</p><div class="course-tags"><span>Mechanics</span><span>Modeling</span><span>Experimentation</span></div></div></article>
+              <article class="course"><span class="course-code">18.01A</span><div><h4>Calculus</h4><p>Strengthened single-variable calculus through integration techniques, applications, improper integrals, infinite series, and mathematical tools used in probability, statistics, and scientific modeling.</p><div class="course-tags"><span>Calculus</span><span>Series</span><span>Mathematical modeling</span></div></div></article>
+              <article class="course"><span class="course-code">18.02A</span><div><h4>Calculus</h4><p>Developed multivariable calculus skills across vector algebra, partial derivatives, optimization, multiple integration, line and surface integrals, and major vector calculus theorems.</p><div class="course-tags"><span>Multivariable calculus</span><span>Optimization</span><span>Vector analysis</span></div></div></article>
+              <article class="course"><span class="course-code">18.A34</span><div><h4>Math Problem Solving</h4><p>Practiced creative mathematical reasoning, proof strategy, structured problem decomposition, and clear communication of solutions in a first-year seminar setting.</p><div class="course-tags"><span>Proof strategy</span><span>Reasoning</span><span>Problem solving</span></div></div></article>
+              <article class="course"><span class="course-code">21G.222</span><div><h4>Expository Writing for Bilingual Students</h4><p>Refined academic writing, revision, argument structure, and clarity for bilingual communication, with emphasis on precise prose for analytical and expository work.</p><div class="course-tags"><span>Writing</span><span>Revision</span><span>Communication</span></div></div></article>
+            </div>
+          </article>
+
+        </div>
+
+        <aside class="source-note">
+          Descriptions use MIT's official catalog and subject pages as the
+          reference point. Special-subject, research, and thesis entries are
+          described at the level MIT publishes them.
+          <div class="source-links" aria-label="Official source links">
+            <a href="https://catalog.mit.edu/subjects/6/">Course 6</a>
+            <a href="https://catalog.mit.edu/subjects/18/">Course 18</a>
+            <a href="https://catalog.mit.edu/subjects/21g/">Course 21G</a>
+            <a href="https://catalog.mit.edu/subjects/cms/">CMS/W</a>
+            <a href="https://catalog.mit.edu/subjects/3/">Course 3</a>
+            <a href="https://catalog.mit.edu/subjects/7/">Course 7</a>
+            <a href="https://catalog.mit.edu/subjects/8/">Course 8</a>
           </div>
-        </article>
+        </aside>
       </section>
     </main>
   </body>
